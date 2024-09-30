@@ -38,6 +38,6 @@ return [
     'upload_label' => 'رفع الملف',
     'upload_button' => 'رفع',
     'upload_error' => 'حدث خطأ أثناء رفع الملف',
-    'loading_text' => ''
+    'loading_text' => '...جاري التحميل، يرجى الانتظار',
 
 ];

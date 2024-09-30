@@ -37,4 +37,6 @@ return [
     'upload_label' => 'Upload File',
     'upload_button' => 'Upload',
     'upload_error' => 'Error uploading the file',
+    'loading_text' => 'Loading, please wait...',
+
 ];
