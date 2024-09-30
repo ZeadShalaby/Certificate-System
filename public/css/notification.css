@@ -1,0 +1,32 @@
+.notification-container {
+    position: fixed;
+    right: 0;
+    top: 20px;
+    width: 30%;
+    z-index: 9999;
+}
+
+.notification-alert {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.notification-alert:hover {
+    transform: scale(1.05);
+}
+
+.mark-as-read-form button {
+    background: linear-gradient(45deg, #28a745, #218838);
+    border: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.mark-as-read-form button:hover {
+    transform: scale(1.1);
+}
+
+.mark-as-read-form i {
+    margin-right: 5px;
+}

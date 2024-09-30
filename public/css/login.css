@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+/* Background shapes */
+.background-shape {
+    position: absolute;
+    border-radius: 15px;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+#text {}
+
+.shape-1 {
+    width: 100px;
+    height: 100px;
+    background-color: #003366;
+    top: 10%;
+    left: 15%;
+}
+
+
+.shape-2 {
+    width: 100px;
+    height: 55px;
+    background-color: #ffcc00;
+    top: 70%;
+    left: 31.2%;
+    opacity: 100%;
+
+}
+
+.shape-3 {
+    width: 100px;
+    height: 100px;
+    background-color: #003366;
+    top: 40%;
+    left: 78.5%;
+}
+
+.shape-4 {
+    width: 100px;
+    height: 100px;
+    background-color: #ffcc00;
+    top: 78.5%;
+    left: 64%;
+}
+
+.shape-5 {
+    width: 120px;
+    height: 120px;
+    background-color: #003366;
+    top: 25%;
+    left: 50%;
+}
+
+.shape-6 {
+    width: 100px;
+    height: 100px;
+    background-color: #003366;
+    top: 82%;
+    left: 6%;
+    opacity: 17%;
+}
+
+.shape-7 {
+    width: 100px;
+    height: 100px;
+    background-color: #ffcc00;
+    top: 7%;
+    left: 88%;
+    opacity: 20%;
+}
+
+.shape-8 {
+    width: 100px;
+    height: 55px;
+    background-color: #003366;
+    top: 17%;
+    left: 62.5%;
+    opacity: 100%;
+}
+
+.login-container {
+    border: 10px solid #003366;
+    border-radius: 15px;
+    max-width: 500px;
+    /* زيادة الحجم */
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    z-index: 1;
+    background-color: #ffffff;
+    padding: 40px;
+    /* إضافة حشوة داخلية */
+}
+
+.logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.login-message {
+    color: #ffcc00ea;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.is-invalid {
+    border-color: #dc3545;
+    /* Red border for invalid inputs */
+}
+
+.invalid-feedback {
+    display: block;
+    /* Ensure that the error message is displayed */
+    color: #dc3545;
+    /* Red color for error messages */
+}
+
+.input-group-text.text-danger {
+    color: #dc3545;
+    /* Red color for error icons */
+}
+
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #003366;
+    font-weight: 500;
+}
+
+.input-group-text {
+    background-color: #003366;
+    color: #ffffff;
+}
+
+#submit {
+    background-color: #003366;
+    border-color: #003366;
+}
+
+#submit:hover {
+    background-color: #002244;
+    border-color: #002244;
+}

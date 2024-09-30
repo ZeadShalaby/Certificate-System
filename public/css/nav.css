@@ -1,0 +1,89 @@
+.input-group {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    /* يمكنك تعديل هذا حسب الحاجة */
+}
+
+#active {
+    font-weight: bold;
+    color: #1B3764;
+}
+
+.logo {
+    color: #1B3764;
+    font-weight: bold;
+}
+
+#btn-enter {
+    background-color: #1B3764;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 50px;
+    /* المسافة بين العناصر */
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 120px;
+}
+
+
+
+.cricle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #1B3764;
+    margin: 4px auto;
+}
+
+#search {
+    width: 362px;
+    height: 40px;
+    padding: 8px 20px;
+    border-radius: 32px;
+    border: 1px solid #ced4da;
+    padding-right: 40px;
+}
+
+.input-group .input-group-text {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    /* المسافة بين الأيقونة وحافة الإدخال */
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.input-group .input-group-text i {
+    color: #6c757d;
+    /* لون الأيقونة يمكن تعديله */
+}
+
+
+/* تحسين الاستجابة على الأجهزة الصغيرة */
+@media (max-width: 576px) {
+    .dropdown-menu {
+        width: 100%;
+        /* اجعل القائمة المنسدلة تمتد بعرض كامل */
+    }
+}
+
+/* تخصيص عام */
+.dropdown-menu {
+    background-color: #fff;
+    /* يمكنك تخصيص لون الخلفية */
+    border-radius: 0.25rem;
+    /* إضافة حواف دائرية */
+    padding: 10px;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    /* تغيير لون الخلفية عند المرور */
+    color: #000;
+    /* تغيير لون النص عند المرور */
+}
