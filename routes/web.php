@@ -63,6 +63,10 @@ Route::post('/notifications/read/{id}', [NotificationController::class, 'markAsR
 // ? test notification
 Route::get('/send-alert', function () {
     $users = User::all(); // Or use a specific user
-    Notification::send($users, new SlackAlertNotification());
+    Notification::send($users, new SlackAlertNotification('This is a test alert'));
     return 'Alert sent!';
 });
+
+Notification::route('slack', env('SLACK_WEBHOOK_URL'))
+    ->notify(new SlackAlertNotification('This is a test alert'));
+

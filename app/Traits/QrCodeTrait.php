@@ -62,7 +62,6 @@ trait QrCodeTrait
         $dompdf->setPaper('A4', 'portrait');
         //? Render the PDF
         $dompdf->render();
-
         return $dompdf;
     }
 

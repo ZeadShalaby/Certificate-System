@@ -11,12 +11,17 @@ class SlackAlertNotification extends Notification implements ShouldQueue
 {
     use Queueable;
 
+    protected $messageContent;
+
     /**
      * Create a new notification instance.
+     *
+     * @param string $messageContent
+     * @return void
      */
-    public function __construct()
+    public function __construct($messageContent)
     {
-        // You can pass any data to the constructor if needed
+        $this->messageContent = $messageContent;
     }
 
     /**
@@ -32,14 +37,10 @@ class SlackAlertNotification extends Notification implements ShouldQueue
     /**
      * Get the Slack representation of the notification.
      */
-    public function toSlack(object $notifiable): SlackMessage
+    public function toSlack($notifiable)
     {
         return (new SlackMessage)
-            ->content('⚠️ Alert: An important event has occurred!')
-            ->attachment(function ($attachment) {
-                $attachment->title('Event Details', url('/')) // Replace with your link
-                    ->content('Details about the important event go here. Please check it out!');
-            });
+            ->content($this->messageContent);
     }
 
     /**
